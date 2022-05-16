@@ -1,3 +1,9 @@
+name: Update DevCard
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches: [ "main" ]
 jobs:
   devcard:
     runs-on: ubuntu-latest
